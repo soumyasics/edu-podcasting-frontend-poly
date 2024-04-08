@@ -37,22 +37,22 @@ function Subscriptions({ url }) {
                             <th>Price</th>
                         </tr>
                     </thead>
-                    {subscriptions && subscriptions.length ? (subscriptions.map((item) => (
+                    {subscriptions && subscriptions.length>0 ? (subscriptions.map((item) => (
 
                         <tbody>
                             <tr>
                                 <th className=' fs-5'>{item.podcastid.podcastname}</th>
                                 <td>         
                                     <img style={{ width: "52px", height: "52px" }}
-                                    src={url + item.listenerid.image.filename}
+                                    src={ item.listenerid?url + item.listenerid.image.filename:''}
                                     alt="img"
                                     className="listenerprofileimg"
                                 ></img>
                                 </td>
-                                <td>{item.listenerid.firstname} {item.listenerid.lastname}</td>
-                                <td>{item.listenerid.email}</td>
+                                <td>{item.listenerid?item.listenerid.firstname:''} {item.listenerid?item.listenerid.lastname:''}</td>
+                                <td>{item.listenerid?item.listenerid.email:''}</td>
 
-                                <td>{item.podcastid.price}</td>
+                                <td>{item.podcastid?item.podcastid.price:''}</td>
                             </tr>
                         </tbody>
 

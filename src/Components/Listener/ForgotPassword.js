@@ -103,14 +103,14 @@ function ForgotPassword() {
                 className="mb-3"
                 controlId="exampleForm.ControlInput1"
               >
-                <Form.Control type="password" name='confirmpassword' placeholder="Conform password" onChange={changefn}
+                <Form.Control type="password" name='confirmpassword' placeholder="Confirm password" onChange={changefn}
                 />{errors.confirmpassword && (
                   <div className="text-danger errortext">{errors.confirmpassword}</div>
                 )}
               </Form.Group>
 
               <div>
-                <button type="submit" className="listenerloginbtn mb-2 p-1">Conform</button>{' '}</div>
+                <button type="submit" className="listenerloginbtn mb-2 p-1">Confirm</button>{' '}</div>
               <div>
                 <button type="reset" className="listenercancelbtn p-1" variant="secondary">Cancel</button>{' '}</div>
             </form>
