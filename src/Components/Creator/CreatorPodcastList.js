@@ -78,7 +78,7 @@ function CreatorPodcastList({ data }) {
                   <div class="podcastlist_card_content">
                     <h4 class="card-title mt-3 mb-2t">{a.podcastname}</h4>
                     <h6 class="card-text col">{a.creatorname}</h6>
-                    <h6 class="card-text" style={{height:"100px"}}>{a.description}</h6>
+                    <h6 class="card-text" style={{height:"110px"}}>{a.description}</h6>
                     <h6 class="card-text">{a.price}</h6>
                     {data.role === 'creator' ? '' : <button className="episodebtn" onClick={()=>gotoPayment(a._id)} >Subscribe</button>}
                     {data.role === 'creator' ? '' : <button className="episodebtn" onClick={()=>gotoDetailsPage(a._id)} >View Details</button>}

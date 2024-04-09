@@ -27,7 +27,7 @@ function SbscriptionList() {
     <div className='col-10'>< div style={{
         margin: "8px", padding: "14px",
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-    }}>
+    }}>   <h3 className='text-success'>Subscription List</h3>
         <Table striped bordered hover>
             <thead>
                 <tr>

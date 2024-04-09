@@ -37,7 +37,7 @@ function LandingPage(props) {
                 <div className="mt-5">
                   <button className="seelatestpodcast text-decoration-none"><Link className="text-light text-decoration-none" to="/listenersubscription" >Latest podcast</Link></button>
                   <button className="btn border border-dark rounded-pill px-5 ms-3">
-                    <Link className="text-dark text-decoration-none" to="/listenerWhishlist">Subscribe</Link>
+                    <Link className="text-dark text-decoration-none" to="/listenersubscription">Subscribe</Link>
                   </button>
                 </div> :<div> <h6>welcome to podast world !</h6><button className="seelatestpodcast text-decoration-none"><Link className="text-light text-decoration-none" to="/ListenerLogin" > Get Started</Link></button></div>
             }

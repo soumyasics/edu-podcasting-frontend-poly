@@ -39,11 +39,11 @@ import Subscriptions from "./Components/Listener/Subscriptions";
 import ListenerViewEpisode from "./Pages/Listener/ListenerViewEpisode";
 import AdminViewEpisode from "./Pages/Admin/AdminViewEpisode";
 import ViewReview from "./Pages/Creator/ViewReview";
-
+import HidePermanentlyOnClick from './Pages/Hide'
 function App() {
 
-  // const url = 'http://localhost:4008/'
-  const url = 'http://hybrid.srishticampus.in:4008/'
+  const url = 'http://localhost:4008/'
+  // const url = 'http://hybrid.srishticampus.in:4008/'
 
   return (
     <BrowserRouter basename="/educational_podcasting">
@@ -96,6 +96,7 @@ function App() {
         <Route path="/episodedetailpage/:id" element={[<ListenerNav url={url} />, <ListenerViewEpisode url={url} role={'detailPage'}/>, <Footer />]} />
         <Route path="/adminviewepisode/:id" element={<AdminViewEpisode url={url} />} />
         <Route path="/viewreview/:id" element={[<CreatorNavbar url={url} />,<ViewReview url={url} />, <Footer />]} />
+        <Route path="/hide" element={<HidePermanentlyOnClick/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -22,8 +22,7 @@ function Paymentform() {
 
   const handlePayment = async () => {
     if (cardholdername.length > 3) {
-      console.log("nbchdbv");
-      if (creaditcardnumber.length == 12) {
+      if (creaditcardnumber.length == 16) {
         if (enteredDateObj > currentDate) {
           if (CVV.length == 3) {
             try {
@@ -61,7 +60,7 @@ function Paymentform() {
         }
 
       } else {
-        alert("card number must have 12 number")
+        alert("card number must have 16 number")
       }
 
     } else {

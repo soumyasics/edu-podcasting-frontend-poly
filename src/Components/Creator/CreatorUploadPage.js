@@ -108,14 +108,16 @@ const creatorname=localStorage.getItem('creatorname')
               Description
             </label>
             <textarea
+             maxlength="120"
               name="description"
               class="form-control"
               id="description"
-              rows={4}
+              rows={3}
               cols={40}
               onChange={creatorPodcastChange}
               required
             />
+            {/* <label style={{float:"right"}}><small>write 120 words</small></label> */}
            
           </div>
           <div className="col">
