@@ -95,7 +95,7 @@ function CreatorProfile({ url }) {
             {creatorRegister.street}, {creatorRegister.city},{" "}
             {creatorRegister.pincode}, {creatorRegister.country}
           </div>
-          <div>mobile : {creatorRegister.mobile}</div>
+          <div>Mobile : {creatorRegister.mobile}</div>
         </div>
       </div>
     </div>

@@ -215,7 +215,6 @@ function ListenerRegister() {
                   required
                 >
                   <option value="">Select Country</option>
-                  <option>Nationality</option>
                   <option value="Canada">Canada</option>
                   <option value="United Kingdom">United Kingdom</option>
                   <option value="Australia">Australia</option>

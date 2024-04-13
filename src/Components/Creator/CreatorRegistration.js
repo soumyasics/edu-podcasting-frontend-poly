@@ -102,6 +102,7 @@ function CreatorRegister() {
                     id="inputtransparent"
                     value={CreatorRegister.firstname}
                     onChange={creatorRegisterChange}
+                    required
                   />
                 </div>
                 <div className="mb-2 mt-3">

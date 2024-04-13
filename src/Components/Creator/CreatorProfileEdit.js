@@ -181,7 +181,7 @@ function CreatorEdit() {
           <Row>
             <Col>
               <div className="mb-3">
-              <label>location</label>
+              <label>Location</label>
 
                 <input
                   type="text"

@@ -63,7 +63,7 @@ function CreatorPodcastList({ data }) {
   return (
     <div className="podcast_list_main">
       <div class="container ">
-      <h5 className="text-dark mt- pt-5">podcasts</h5>
+      <h5 className="text-dark mt- pt-5">Podcasts</h5>
         <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
           {creatorpodcast.length>0 ? (
             creatorpodcast.map((a) => (
@@ -100,7 +100,7 @@ function CreatorPodcastList({ data }) {
               )
           )) : (
             <div className="text-sucess">
-              <h4 className="text-success text-center">No podcast found</h4>
+              <h4 className="text-success text-center">No Podcast found</h4>
             </div>
           )}
         </div>

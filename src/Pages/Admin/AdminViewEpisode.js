@@ -83,7 +83,7 @@ function AdminViewEpisode({ url }) {
                                     <h6 className="card-text col">{item.creatorname}</h6>
                                     <h6>Discription {item.description}</h6>
                                     <button className="episodebtn"
-                                    ><Link to="/podcastlist" className="text-light">                     go to list
+                                    ><Link to="/podcastlist" className="text-light">                     Go to list
                                         </Link>
                                     </button>
                                 </div>

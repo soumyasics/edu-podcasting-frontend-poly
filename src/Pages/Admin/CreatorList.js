@@ -36,7 +36,7 @@ function CreatorList({ url }) {
                             <th>Email ID</th>
                             <th> DOB</th>
                             <th> Gender</th>
-                            <th> country
+                            <th> Country
                             </th> <th> City</th>
 
                         </tr>

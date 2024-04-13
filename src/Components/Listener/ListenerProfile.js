@@ -69,7 +69,7 @@ function ListenerProfile({ url }) {
           <div>{listenerRegister?listenerRegister.email:''}</div>
           <div>About me</div>
           <div>
-            my address : {listenerRegister?listenerRegister.street:''},{listenerRegister?listenerRegister.city:''},
+            My Address : {listenerRegister?listenerRegister.street:''},{listenerRegister?listenerRegister.city:''},
             {listenerRegister?listenerRegister.pincode:''},{listenerRegister?listenerRegister.country:''}
           </div>
         </div>

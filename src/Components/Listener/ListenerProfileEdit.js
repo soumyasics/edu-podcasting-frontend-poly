@@ -81,8 +81,9 @@ function ListenerEdit() {
         })
         .then((response) => {
           alert(response.data.msg);
+          navigate('/listenerProfile')
           // console.log(response,"y");
-          window.location.reload();
+          // window.location.reload();
         })
         .catch((error) => {
           console.error("Error submitting data: ", error);
