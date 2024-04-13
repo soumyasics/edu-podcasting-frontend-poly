@@ -41,8 +41,8 @@ import AdminViewEpisode from "./Pages/Admin/AdminViewEpisode";
 import ViewReview from "./Pages/Creator/ViewReview";
 function App() {
 
-  const url = 'http://localhost:4008/'
-  // const url = 'http://hybrid.srishticampus.in:4008/'
+  // const url = 'http://localhost:4008/'
+  const url = 'http://hybrid.srishticampus.in:4008/'
 
   return (
     <BrowserRouter basename="/educational_podcasting">
