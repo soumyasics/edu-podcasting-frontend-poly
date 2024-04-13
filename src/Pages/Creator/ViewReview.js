@@ -20,6 +20,11 @@ function ViewReview() {
         console.log('Error submitting data: ', error);
       });
   }, []);
+  useEffect(() => {
+    if (localStorage.getItem("creatorid") == null) {
+      navigate("/");
+    } 
+  }, []);
 
   return (
     <div className='container'>

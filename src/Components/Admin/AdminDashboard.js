@@ -4,12 +4,14 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Sidebar from './AdminSidebar';
 import axiosInstance from "../../Baseurl";
+import { useNavigate } from "react-router-dom";
 
 
 function AdminDashboard() {
   const [ListenerCount, setListenerCount] = useState(0);
   const [creatorCount, setCreatorCount] = useState(0);
   const [podcastcount, setPodcastCount] = useState(0);
+  const navigate=useNavigate()
 
 
   const ListenerCollectionCount = async () => {
@@ -44,7 +46,12 @@ function AdminDashboard() {
     }
   };
 
-
+  useEffect(() => {
+    if (localStorage.getItem("admin") == null) {
+      navigate("/adminlogin");
+    } 
+  }, []);
+  
   useEffect(() => {
     ListenerCollectionCount()
     CreatorCollectionCount()

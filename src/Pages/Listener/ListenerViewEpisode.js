@@ -116,7 +116,11 @@ const ViewpodcastByID=()=>{
       });
   };
 
-
+  useEffect(() => {
+    if (localStorage.getItem("listenerid") == null) {
+      navigate("/");
+    } 
+  }, []);
 
   return (
     <div className="container mt-5">
