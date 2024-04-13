@@ -19,6 +19,7 @@ function CreatorPodcastList({ data }) {
     axiosInstance
       .post(podcastEndPoint, {
         id: localStorage.getItem("creatorid"),
+        lisnterId: localStorage.getItem("listenerid")
       })
       .then((response) => {
         console.log(response.data.data, "ajeena");
